@@ -1,0 +1,89 @@
+html, body, * {
+    box-sizing: border-box;
+}
+:root{
+    --background-blue : #ABC4FF;
+}
+.login_section {
+    width: 100vw;
+    min-height:100vh ;
+}
+.login_container {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.section_presentation {
+    width: 60%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-blue);
+}
+.section_presentation_container {
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+.section_presentation_app_name {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.section_presentation_app_resum {
+    font-size: 23px;
+}
+.login_form_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.login_form {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_email, .login_password, .login_confirm {
+    position: relative;
+}
+.login_email > label, .login_password > label, .login_confirm > label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 0 5px;
+    transition: .4s;
+}
+.login_email, .login_password, .login_confirm {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.login_form_title {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.login_email > input, .login_password > input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.login_form_container > form {
+    width: 80%;
+}
+.login_end {
+    display: flex;
+    align-items: center;
+}
+.login_end > input {
+    margin-right: 15px;
+    color: #fff;
+    background-color: var(--background-blue);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}

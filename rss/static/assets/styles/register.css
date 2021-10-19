@@ -1,0 +1,89 @@
+html, body, * {
+    box-sizing: border-box;
+}
+:root{
+    --background-blue : #ABC4FF;
+}
+.register_section {
+    width: 100vw;
+    min-height:100vh ;
+}
+.register_container {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.section_presentation {
+    width: 60%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-blue);
+}
+.section_presentation_container {
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+.section_presentation_app_name {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.section_presentation_app_resum {
+    font-size: 23px;
+}
+.register_form_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.register_form {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register_email, .register_password, .register_confirm {
+    position: relative;
+}
+.register_email > label, .register_password > label, .register_confirm > label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .4s;
+    background-color: #fff;
+    padding: 0 5px;
+}
+.register_email, .register_password, .register_confirm {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.register_form_title {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.register_email > input, .register_password > input, .register_confirm > input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.register_form_container > form {
+    width: 80%;
+}
+.register_end {
+    display: flex;
+    align-items: center;
+}
+.register_end > input {
+    margin-right: 15px;
+    color: #fff;
+    background-color: var(--background-blue);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
