@@ -1,4 +1,7 @@
 from django.shortcuts import render
+import feedparser
+from django.http import HttpResponse
+import requests
 
 # Create your views here.
 from django.contrib.auth.models import User, Group
@@ -23,3 +26,9 @@ class GroupViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
     permission_classes = [permissions.IsAuthenticated]
+
+def parser(request) :
+    # link rss : view-source:https://daily.dev/blog
+    d = feedparser.parse(requests.get("https://www.clubic.com/feed/news.rss").text)
+    return HttpResponse(str(d['entries']))
+
