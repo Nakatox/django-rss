@@ -8,7 +8,7 @@ class Article(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(default=timezone.now)
     def __str__(self):
-        return self.name
+        return self.title
 
 class Vote(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
