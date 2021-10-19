@@ -1,15 +1,6 @@
-
 # Django-rss
 
-This project is a remake of the site news.ycombinator.
-On the main page we have a list of the articles coming from multiples rss that we use, and are stored in the database.
-The articles can be upvoted by the users, and there is a ranking based on the most recent ones.
-
-
-
-
-
-
+This project is a remake of the site news.ycombinator. On the main page we have a list of the articles coming from multiples rss that we use, and are stored in the database. The articles can be upvoted by the users, and there is a ranking based on the most recent ones.
 
 ## Features
 
@@ -18,7 +9,6 @@ The articles can be upvoted by the users, and there is a ranking based on the mo
 - The user can see the different articles on the webpage.
 - The user can upvote only one time an article that he likes or founds interesting.
 
-  
 ## Run Locally
 
 Clone the project
@@ -45,18 +35,12 @@ Start the server
   python manage.py runserver
 ```
 
-  
 ## Screenshots
 
-Register Page
-![App Screenshot](https://user-images.githubusercontent.com/73486687/137913054-f16c576f-30bf-4d4f-ac5c-0edf86d8628a.png)
+Register Page ![App Screenshot](https://user-images.githubusercontent.com/73486687/137913054-f16c576f-30bf-4d4f-ac5c-0edf86d8628a.png)
 
+Home Page ![App Screenshot](https://user-images.githubusercontent.com/73486687/137913138-0dad4d5d-0f3d-4e97-913f-a7e470a3f43f.png)
 
-Home Page
-![App Screenshot](https://user-images.githubusercontent.com/73486687/137913138-0dad4d5d-0f3d-4e97-913f-a7e470a3f43f.png)
-
-
-  
 ## API Reference
 
 #### Get all articles
@@ -87,12 +71,10 @@ Home Page
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
 
-  
 ## Authors
 
 - [@Ulysseassoo](https://github.com/Ulysseassoo)
 - [@Nakatox](https://github.com/Nakatox)
 - [@Feuka](https://github.com/fabian222222)
 - [@AntoineSimonot ](https://github.com/AntoineSimonot)
-
-  
+- [@KoHorizon ](https://github.com/KoHorizon)
